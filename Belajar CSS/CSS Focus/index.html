@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Focus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- focus on element -->
+<div class="wrapper">
+    <input type="text" placeholder="please press tab button to focus">
+    <a href="">second focus after press tab again</a>
+    <div>not focusable elements</div>
+    <div tabindex="0">i am focusable now!</div>
+  </div>
+  
+  <!-- styling focus -->
+  <div class="wrapper">
+    <a href="" class="styling-focus">Styling the focus</a>
+  </div>
+  
+  <!-- focus within -->
+  <div class="wrapper focus-within">
+      <button class="button">Use your tab key to focus this button</button>
+    <div class="helper">Hello!</div>
+  </div>
+  
+  <!-- focus visible -->
+  <div class="wrapper focus-within">
+     <button class="button">I am a button</button>
+  </div>
+</body>
+</html>

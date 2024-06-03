@@ -1,0 +1,51 @@
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    max-width: 15ch;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    max-width: 70ch;
+  }
+  
+  
+  /* Presentational styles */
+  article {
+    width: 100%;
+  }
+  
+  article > * + * {
+    margin-top: 1.25em;
+  }
+  p.myp {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  div {
+      width: 300px;
+      height: 100px;
+  }
+  
+  div p {
+      width: 50%; /* calculated: 150px */
+  }
+  
+  
+  /* Presentation styles */
+  
+  * {
+    box-sizing: content-box;
+  }
+  div.border, p.border {
+    border: 1px solid black;
+  padding: 0.25rem;
+  }
+  div.vp {
+      width: 10vw;
+  }
+  
+  p.vp {
+      max-width: 60ch;
+  }
+  

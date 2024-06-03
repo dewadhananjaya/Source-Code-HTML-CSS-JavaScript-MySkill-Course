@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    gap: 50px;
+  }
+  .list-container ul.inside {
+    list-style-position: inside;
+  }
+  .list-container li {
+    background-color: plum;
+  }
+  .list-container li::marker {
+    background-color: plum;
+  }
+  .list-style-image {
+    list-style-image: url("https://media.tenor.com/GVZlJO9grMMAAAAj/skate-skateboarding.gif");
+  }
+  .list-style-type ul {
+    list-style-type: "🛒";
+  }

@@ -1,0 +1,15 @@
+article p:first-of-type {
+    color: red;
+    font-size: 1.5em;
+  }
+
+[data-type] {
+    background: gold;
+    margin-bottom: 10px;
+    width: 100px;
+    padding: 10px;
+}
+
+[data-type = "primary"] {
+    color: red;
+}

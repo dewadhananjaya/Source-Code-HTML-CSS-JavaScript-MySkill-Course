@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inheritance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+          <div class="flow">
+            <a href="#" class="my-button">A link that looks like a button</a>
+            <article class="flow">
+              <p>
+                Here is some content in an article. The <a href="#">link style</a> of the button will
+                inherit from this article&#39s CSS.
+              </p>
+              <p><a href="#" class="my-button">A link that looks like a button</a></p>
+            </article>
+          </div>
+        </div>
+        <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+
+        <main>
+        <div class="wrapper">
+          <article class="flow">
+            <h1>Controlling and utilising inheritance</h1>
+            <p>The <strong>bold elements inside a <code>&lt;strong&gt;</code></strong> have a <code>font-weight</code> of <code>900</code> by default. </p>
+            <div class="my-component">
+              <p>This text is in a component called <code>.my-component</code>, which has a <code>font-weight</code> of <code>500</code>. </p>
+            </div>
+            <div class="my-component">
+              <p><strong>This <code>&lt;strong&gt;</code> element is inside <code>.my-component</code>. It inherits the <code>500</code> weight because it’s <code>font-weight</code> is set to <code>inherit</code>.</strong></p>
+            </div>
+          </article>
+        </div>
+        <article>
+            <p><strong>I am a strong element that is bold because that is the inherited user agent style.</strong></p>
+            <aside>
+                <p><strong>I am a strong element but my font weight is normal because it is in an aside element.</strong></p>
+            </aside>
+        </article>
+        </main>
+    </main>
+</body>
+</html>

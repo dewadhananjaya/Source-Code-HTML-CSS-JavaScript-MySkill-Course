@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z - Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex">
+        <!-- without relative position -->
+        <div>
+          <h4>WITHOUT RELATIVE POSITION</h4>
+          <div class="wrapper">
+            <div class="box z-index-3">Z-Index: 3</div>
+            <div class="box z-index-1">Z-Index: 1</div>
+            <div class="box z-index-2">Z-Index: 2</div>
+          </div>
+        </div>
+        <!--  with relative  -->
+        <div>
+          <h4>WITH RELATIVE POSITION</h4>
+          <div class="wrapper relative-position">
+            <div class="box z-index-3">Z-Index: 3</div>
+            <div class="box z-index-1">Z-Index: 1</div>
+            <div class="box z-index-2">Z-Index: 2</div>
+          </div>
+        </div>
+        <!-- negative z-index -->
+        <div class="negative-z-index">
+          <div class="child">I am behind my parent</div>
+        </div>
+        <div class="negative-z-index relative">
+          <div class="child">I am behind my parent</div>
+        </div>
+        <!--  stacking context  -->
+        <div>
+          <div class="top">
+            <code>z-index: 1;</code>
+            <div class="inner">
+              <code>z-index: 999;</code>
+            </div>
+          </div>
+          <div class="bottom">
+            <code>z-index: 2;</code>
+            <div class="inner">
+              <code>z-index: 2;</code>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

@@ -1,0 +1,29 @@
+.wrapper:not(:first-child) {
+    margin-top: 3rem;
+ }
+ input[type="text"] {
+   width: 250px;
+ }
+ 
+ .styling-focus {
+   display: block;
+ }
+ .styling-focus:focus {
+   outline: 2px solid red;
+   outline-offset: 1rem;
+ }
+ 
+ .focus-within .helper {
+   display: none;
+ }
+ .focus-within:focus-within .helper {
+   display: block;
+ }
+ 
+ .focus-visible button:focus {
+   outline: none;
+ }
+ .focus-visible button:focus-visible {
+   outline: 2px dashed blue;
+   outline-offset: 4px;
+ }
